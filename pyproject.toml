@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchrun"
+version = "1.0.0"
+description = "Rerun a command whenever files change — stdlib only, zero dependencies, process-group aware."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+watchrun = "watchrun:main"
+
+[tool.setuptools]
+py-modules = ["watchrun"]
